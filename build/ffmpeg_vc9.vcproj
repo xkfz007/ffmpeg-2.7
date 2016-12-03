@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\;..\include"
+				AdditionalIncludeDirectories="..\source\;..\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
+				AdditionalDependencies="..\source\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
 				OutputFile="$(OutDir)\$(ProjectName).exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
@@ -120,7 +120,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="..\;..\include"
+				AdditionalIncludeDirectories="..\source\;..\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;DEBUG"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -140,7 +140,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
+				AdditionalDependencies="..\source\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(TargetName).pdb"
@@ -177,31 +177,31 @@
 	</References>
 	<Files>
 		<File
-			RelativePath="..\cmdutils.c"
+			RelativePath="..\source\cmdutils.c"
 			>
 		</File>
 		<File
-			RelativePath="..\cmdutils.h"
+			RelativePath="..\source\cmdutils.h"
 			>
 		</File>
 		<File
-			RelativePath="..\cmdutils_common_opts.h"
+			RelativePath="..\source\cmdutils_common_opts.h"
 			>
 		</File>
 		<File
-			RelativePath="..\ffmpeg.c"
+			RelativePath="..\source\ffmpeg.c"
 			>
 		</File>
 		<File
-			RelativePath="..\ffmpeg.h"
+			RelativePath="..\source\ffmpeg.h"
 			>
 		</File>
 		<File
-			RelativePath="..\ffmpeg_filter.c"
+			RelativePath="..\source\ffmpeg_filter.c"
 			>
 		</File>
 		<File
-			RelativePath="..\ffmpeg_opt.c"
+			RelativePath="..\source\ffmpeg_opt.c"
 			>
 		</File>
 	</Files>

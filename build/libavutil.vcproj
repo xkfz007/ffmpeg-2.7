@@ -140,9 +140,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\lib\libxvidcore.lib ..\lib\libx264.lib ..\lib\SDL.lib ..\lib\libx265.lib"
+				AdditionalDependencies="..\source\lib\libxvidcore.lib ..\lib\libx264.lib ..\lib\SDL.lib ..\lib\libx265.lib"
 				LinkIncremental="1"
-				ModuleDefinitionFile="..\ffmpeg.def"
+				ModuleDefinitionFile="..\source\ffmpeg.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(TargetName).pdb"
 				SubSystem="1"
@@ -181,30 +181,30 @@
 			Name="compat"
 			>
 			<File
-				RelativePath="..\compat\getopt.c"
+				RelativePath="..\source\compat\getopt.c"
 				>
 			</File>
 			<File
-				RelativePath="..\compat\strtod.c"
+				RelativePath="..\source\compat\strtod.c"
 				>
 			</File>
 			<File
-				RelativePath="..\compat\va_copy.h"
+				RelativePath="..\source\compat\va_copy.h"
 				>
 			</File>
 			<File
-				RelativePath="..\compat\w32pthreads.h"
+				RelativePath="..\source\compat\w32pthreads.h"
 				>
 			</File>
 			<Filter
 				Name="msvcrt"
 				>
 				<File
-					RelativePath="..\compat\msvcrt\snprintf.c"
+					RelativePath="..\source\compat\msvcrt\snprintf.c"
 					>
 				</File>
 				<File
-					RelativePath="..\compat\msvcrt\snprintf.h"
+					RelativePath="..\source\compat\msvcrt\snprintf.h"
 					>
 				</File>
 			</Filter>
@@ -213,220 +213,220 @@
 			Name="libavutil"
 			>
 			<File
-				RelativePath="..\libavutil\adler32.c"
+				RelativePath="..\source\libavutil\adler32.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\aes.c"
+				RelativePath="..\source\libavutil\aes.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\atomic.c"
+				RelativePath="..\source\libavutil\atomic.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\audio_fifo.c"
+				RelativePath="..\source\libavutil\audio_fifo.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\avstring.c"
+				RelativePath="..\source\libavutil\avstring.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\base64.c"
+				RelativePath="..\source\libavutil\base64.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\bprint.c"
+				RelativePath="..\source\libavutil\bprint.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\buffer.c"
+				RelativePath="..\source\libavutil\buffer.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\channel_layout.c"
+				RelativePath="..\source\libavutil\channel_layout.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\color_utils.c"
+				RelativePath="..\source\libavutil\color_utils.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\cpu.c"
+				RelativePath="..\source\libavutil\cpu.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\crc.c"
+				RelativePath="..\source\libavutil\crc.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\des.c"
+				RelativePath="..\source\libavutil\des.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\dict.c"
+				RelativePath="..\source\libavutil\dict.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\display.c"
+				RelativePath="..\source\libavutil\display.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\downmix_info.c"
+				RelativePath="..\source\libavutil\downmix_info.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\error.c"
+				RelativePath="..\source\libavutil\error.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\eval.c"
+				RelativePath="..\source\libavutil\eval.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\fifo.c"
+				RelativePath="..\source\libavutil\fifo.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\file.c"
+				RelativePath="..\source\libavutil\file.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\file_open.c"
+				RelativePath="..\source\libavutil\file_open.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\float_dsp.c"
+				RelativePath="..\source\libavutil\float_dsp.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\frame.c"
+				RelativePath="..\source\libavutil\frame.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\hash.c"
+				RelativePath="..\source\libavutil\hash.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\imgutils.c"
+				RelativePath="..\source\libavutil\imgutils.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\integer.c"
+				RelativePath="..\source\libavutil\integer.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\intmath.c"
+				RelativePath="..\source\libavutil\intmath.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\lfg.c"
+				RelativePath="..\source\libavutil\lfg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\lls.c"
+				RelativePath="..\source\libavutil\lls.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\log.c"
+				RelativePath="..\source\libavutil\log.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\log2_tab.c"
+				RelativePath="..\source\libavutil\log2_tab.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\lzo.c"
+				RelativePath="..\source\libavutil\lzo.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\mathematics.c"
+				RelativePath="..\source\libavutil\mathematics.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\md5.c"
+				RelativePath="..\source\libavutil\md5.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\mem.c"
+				RelativePath="..\source\libavutil\mem.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\murmur3.c"
+				RelativePath="..\source\libavutil\murmur3.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\opt.c"
+				RelativePath="..\source\libavutil\opt.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\parseutils.c"
+				RelativePath="..\source\libavutil\parseutils.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\pixdesc.c"
+				RelativePath="..\source\libavutil\pixdesc.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\pixelutils.c"
+				RelativePath="..\source\libavutil\pixelutils.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\random_seed.c"
+				RelativePath="..\source\libavutil\random_seed.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\rational.c"
+				RelativePath="..\source\libavutil\rational.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\rc4.c"
+				RelativePath="..\source\libavutil\rc4.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\ripemd.c"
+				RelativePath="..\source\libavutil\ripemd.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\samplefmt.c"
+				RelativePath="..\source\libavutil\samplefmt.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\sha.c"
+				RelativePath="..\source\libavutil\sha.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\sha512.c"
+				RelativePath="..\source\libavutil\sha512.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\stereo3d.c"
+				RelativePath="..\source\libavutil\stereo3d.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\time.c"
+				RelativePath="..\source\libavutil\time.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\timecode.c"
+				RelativePath="..\source\libavutil\timecode.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\tree.c"
+				RelativePath="..\source\libavutil\tree.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\utf8.c"
+				RelativePath="..\source\libavutil\utf8.c"
 				>
 			</File>
 			<File
-				RelativePath="..\libavutil\utils.c"
+				RelativePath="..\source\libavutil\utils.c"
 				>
 			</File>
 		</Filter>
 		<File
-			RelativePath="..\config.h"
+			RelativePath="..\source\config.h"
 			>
 		</File>
 	</Files>
