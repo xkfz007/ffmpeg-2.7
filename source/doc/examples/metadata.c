@@ -26,6 +26,7 @@
  * @example metadata.c
  */
 
+#ifdef _METADATA
 #include <stdio.h>
 
 #include <libavformat/avformat.h>
@@ -54,3 +55,4 @@ int main (int argc, char **argv)
     avformat_close_input(&fmt_ctx);
     return 0;
 }
+#endif

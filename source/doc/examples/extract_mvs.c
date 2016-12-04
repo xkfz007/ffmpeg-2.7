@@ -20,6 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+#ifdef _EXTRACT_MVS
 
 #include <libavutil/motion_vector.h>
 #include <libavformat/avformat.h>
@@ -183,3 +184,5 @@ end:
     av_frame_free(&frame);
     return ret < 0;
 }
+
+#endif

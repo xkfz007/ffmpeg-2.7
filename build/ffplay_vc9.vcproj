@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\source\;..\include;..\include\SDL"
+				AdditionalIncludeDirectories="..\source\;..\..\external_libs\win\include;&quot;..\..\external_libs\SDL-win\include\SDL&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG;_WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\source\bin\vc9\$(ConfigurationName)\libff_vc9.lib ..\lib\SDL.lib"
+				AdditionalDependencies="..\bin\vc9\$(ConfigurationName)\libff_vc9.lib ..\..\external_libs\SDL-win\lib\x86\SDL.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(TargetName).pdb"

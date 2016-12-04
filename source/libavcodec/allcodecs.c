@@ -533,10 +533,12 @@ void avcodec_register_all(void)
     REGISTER_ENCDEC (SSA,               ssa);
     REGISTER_ENCDEC (ASS,               ass);
     REGISTER_DECODER(CCAPTION,          ccaption);
+#ifdef NDEBUG
     REGISTER_ENCDEC (DVBSUB,            dvbsub);
     REGISTER_ENCDEC (DVDSUB,            dvdsub);
     REGISTER_DECODER(JACOSUB,           jacosub);
     REGISTER_DECODER(MICRODVD,          microdvd);
+#endif
     REGISTER_ENCDEC (MOVTEXT,           movtext);
     REGISTER_DECODER(MPL2,              mpl2);
     REGISTER_DECODER(PGSSUB,            pgssub);
@@ -588,9 +590,7 @@ void avcodec_register_all(void)
     REGISTER_ENCODER(LIBX265,           libx265);
 #ifdef NDEBUG
     REGISTER_ENCODER(LIBXAVS,           libxavs);
-#endif
     REGISTER_ENCODER(LIBXVID,           libxvid);
-#ifdef NDEBUG
     REGISTER_DECODER(LIBZVBI_TELETEXT,  libzvbi_teletext);
     REGISTER_ENCODER(LIBAACPLUS,        libaacplus);
 #endif

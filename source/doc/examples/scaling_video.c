@@ -26,6 +26,7 @@
  * @example scaling_video.c
  */
 
+#ifdef _SCALING_VIDEO
 #include <libavutil/imgutils.h>
 #include <libavutil/parseutils.h>
 #include <libswscale/swscale.h>
@@ -138,3 +139,4 @@ end:
     sws_freeContext(sws_ctx);
     return ret < 0;
 }
+#endif

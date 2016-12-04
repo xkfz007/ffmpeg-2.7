@@ -9,6 +9,8 @@ Project("{EAF909A5-FA59-4C3D-9431-0FCC20D5BCF9}") = "ffplay_vc9", "ffplay_vc9.ic
 EndProject
 Project("{EAF909A5-FA59-4C3D-9431-0FCC20D5BCF9}") = "ffprobe_vc9", "ffprobe_vc9.icproj", "{91DF5F3E-71D9-4AA3-B0A1-FA7A600F23FE}"
 EndProject
+Project("{EAF909A5-FA59-4C3D-9431-0FCC20D5BCF9}") = "transcoding", "transcoding.icproj", "{1161E803-68D3-44E4-817B-65F6925BF28C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,12 @@ Global
 		{91DF5F3E-71D9-4AA3-B0A1-FA7A600F23FE}.Debug|Win32.Build.0 = Debug|Win32
 		{91DF5F3E-71D9-4AA3-B0A1-FA7A600F23FE}.Release|Win32.ActiveCfg = Release|Win32
 		{91DF5F3E-71D9-4AA3-B0A1-FA7A600F23FE}.Release|Win32.Build.0 = Release|Win32
+		{1161E803-68D3-44E4-817B-65F6925BF28C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1161E803-68D3-44E4-817B-65F6925BF28C}.Debug|Win32.Build.0 = Debug|Win32
+		{1161E803-68D3-44E4-817B-65F6925BF28C}.Release|Win32.ActiveCfg = Release|Win32
+		{1161E803-68D3-44E4-817B-65F6925BF28C}.Release|Win32.Build.0 = Release|Win32
+		{4D52CB0E-B80F-4659-9220-AB8B5E4A27EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4D52CB0E-B80F-4659-9220-AB8B5E4A27EF}.Release|Win32.ActiveCfg = Release|Win32
 		{DC895068-3077-4269-A30E-6EB01ACEE18C}.Debug|Win32.ActiveCfg = Debug|Win32
 		{DC895068-3077-4269-A30E-6EB01ACEE18C}.Debug|Win32.Build.0 = Debug|Win32
 		{DC895068-3077-4269-A30E-6EB01ACEE18C}.Release|Win32.ActiveCfg = Release|Win32
@@ -43,8 +51,10 @@ Global
 		{B8ACABC9-3493-445A-88CD-1DC3B78ECA09}.Debug|Win32.Build.0 = Debug|Win32
 		{B8ACABC9-3493-445A-88CD-1DC3B78ECA09}.Release|Win32.ActiveCfg = Release|Win32
 		{B8ACABC9-3493-445A-88CD-1DC3B78ECA09}.Release|Win32.Build.0 = Release|Win32
-		{4D52CB0E-B80F-4659-9220-AB8B5E4A27EF}.Debug|Win32.ActiveCfg = Debug|Win32
-		{4D52CB0E-B80F-4659-9220-AB8B5E4A27EF}.Release|Win32.ActiveCfg = Release|Win32
+		{E9F2E0A8-10E5-40F8-9D2E-C23EBE403D28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9F2E0A8-10E5-40F8-9D2E-C23EBE403D28}.Debug|Win32.Build.0 = Debug|Win32
+		{E9F2E0A8-10E5-40F8-9D2E-C23EBE403D28}.Release|Win32.ActiveCfg = Release|Win32
+		{E9F2E0A8-10E5-40F8-9D2E-C23EBE403D28}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

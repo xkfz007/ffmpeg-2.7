@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
+#ifdef _AVIO_LiST_DIR
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavformat/avio.h>
@@ -118,3 +118,4 @@ int main(int argc, char *argv[])
 
     return ret < 0 ? 1 : 0;
 }
+#endif

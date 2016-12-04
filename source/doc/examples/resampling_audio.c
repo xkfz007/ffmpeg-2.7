@@ -24,7 +24,7 @@
  * @example resampling_audio.c
  * libswresample API use example.
  */
-
+#ifdef _RESAMPLING_AUDIO
 #include <libavutil/opt.h>
 #include <libavutil/channel_layout.h>
 #include <libavutil/samplefmt.h>
@@ -212,3 +212,4 @@ end:
     swr_free(&swr_ctx);
     return ret < 0;
 }
+#endif

@@ -25,6 +25,7 @@
  * @author Andreas Unterweger (dustsigns@gmail.com)
  */
 
+#ifdef _TRANSCODE_AAC
 #include <stdio.h>
 
 #include "libavformat/avformat.h"
@@ -768,3 +769,4 @@ cleanup:
 
     return ret;
 }
+#endif

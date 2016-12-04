@@ -29,6 +29,7 @@
  * @example muxing.c
  */
 
+#ifdef _MUXING
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -668,3 +669,5 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+#endif

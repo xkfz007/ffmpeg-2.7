@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="ffmpeg_vc9"
-	ProjectGUID="{DC895068-3077-4269-A30E-6EB01ACEE18C}"
+	Name="transcoding"
+	ProjectGUID="{E9F2E0A8-10E5-40F8-9D2E-C23EBE403D28}"
 	RootNamespace="ffmpeg_vc9"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\source\;..\..\external_libs\win\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG;snprintf=_snprintf"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -177,31 +177,7 @@
 	</References>
 	<Files>
 		<File
-			RelativePath="..\source\cmdutils.c"
-			>
-		</File>
-		<File
-			RelativePath="..\source\cmdutils.h"
-			>
-		</File>
-		<File
-			RelativePath="..\source\cmdutils_common_opts.h"
-			>
-		</File>
-		<File
-			RelativePath="..\source\ffmpeg.c"
-			>
-		</File>
-		<File
-			RelativePath="..\source\ffmpeg.h"
-			>
-		</File>
-		<File
-			RelativePath="..\source\ffmpeg_filter.c"
-			>
-		</File>
-		<File
-			RelativePath="..\source\ffmpeg_opt.c"
+			RelativePath="..\source\doc\examples\transcoding.c"
 			>
 		</File>
 	</Files>

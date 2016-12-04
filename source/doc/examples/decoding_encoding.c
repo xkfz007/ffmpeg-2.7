@@ -30,6 +30,7 @@
  * format handling
  */
 
+#ifdef _DECODING_ENCODING
 #include <math.h>
 
 #include <libavutil/opt.h>
@@ -663,3 +664,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+#endif

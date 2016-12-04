@@ -27,7 +27,7 @@
  * Remux streams from one container format to another.
  * @example remuxing.c
  */
-
+#ifdef _REMUXING
 #include <libavutil/timestamp.h>
 #include <libavformat/avformat.h>
 
@@ -163,3 +163,4 @@ end:
 
     return 0;
 }
+#endif

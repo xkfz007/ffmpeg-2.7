@@ -28,7 +28,7 @@
  * AVIOContext read callback.
  * @example avio_reading.c
  */
-
+#ifdef _AVIO_READING
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavformat/avio.h>
@@ -132,3 +132,5 @@ end:
 
     return 0;
 }
+
+#endif

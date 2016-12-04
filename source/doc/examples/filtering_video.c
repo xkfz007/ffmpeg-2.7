@@ -27,6 +27,7 @@
  * @example filtering_video.c
  */
 
+#ifdef _FILTER_VIDEO
 #define _XOPEN_SOURCE 600 /* for usleep */
 #include <unistd.h>
 
@@ -276,3 +277,4 @@ end:
 
     exit(0);
 }
+#endif

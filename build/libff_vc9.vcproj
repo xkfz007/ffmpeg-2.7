@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..;..\include;..\include\x264;..\include\xvid;..\include\SDL;..\include\x265"
+				AdditionalIncludeDirectories="..\source;&quot;..\..\external_libs\x264-snapshot-20150223\include&quot;;&quot;..\..\external_libs\SDL-win\include\SDL&quot;;..\..\external_libs\x265_v1.7\include;..\..\\external_libs\win\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG;_WIN32;HAVE_AV_CONFIG_H;strtoll=_strtoi64;EOVERFLOW=EFBIG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\source\lib\libxvidcore.lib ..\lib\libx264.lib ..\lib\SDL.lib ..\lib\libx265.lib"
+				AdditionalDependencies="..\..\external_libs\x265_v1.7\lib\libx265.lib ..\..\external_libs\SDL-win\lib\x86\SDL.lib ..\..\external_libs\x264-snapshot-20150223\lib\libx264_static.lib"
 				LinkIncremental="1"
 				ModuleDefinitionFile="..\source\ffmpeg.def"
 				GenerateDebugInformation="true"
@@ -3814,10 +3814,6 @@
 			</File>
 			<File
 				RelativePath="..\source\libavcodec\libx265.c"
-				>
-			</File>
-			<File
-				RelativePath="..\source\libavcodec\libxvid.c"
 				>
 			</File>
 			<File

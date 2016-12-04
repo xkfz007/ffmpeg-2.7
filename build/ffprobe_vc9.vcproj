@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\source\;..\include"
+				AdditionalIncludeDirectories="..\source\;..\..\external_libs\win\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG;strtoll=_strtoi64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\source\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
+				AdditionalDependencies="..\bin\vc9\$(ConfigurationName)\libff_vc9.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)\$(TargetName).pdb"

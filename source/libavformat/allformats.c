@@ -115,9 +115,9 @@ void av_register_all(void)
     REGISTER_DEMUXER (DSS,              dss);
     REGISTER_MUXDEMUX(DTS,              dts);
     REGISTER_DEMUXER (DTSHD,            dtshd);
+#ifdef NDEBUG
     REGISTER_MUXDEMUX(DV,               dv);
     REGISTER_DEMUXER (DVBSUB,           dvbsub);
-#ifdef NDEBUG
     REGISTER_DEMUXER (DXA,              dxa);
 #endif
     REGISTER_DEMUXER (EA,               ea);
@@ -192,12 +192,14 @@ void av_register_all(void)
     REGISTER_DEMUXER (MPC,              mpc);
     REGISTER_DEMUXER (MPC8,             mpc8);
     REGISTER_MUXER   (MPEG1SYSTEM,      mpeg1system);
+#ifdef NDEBUG
     REGISTER_MUXER   (MPEG1VCD,         mpeg1vcd);
     REGISTER_MUXER   (MPEG1VIDEO,       mpeg1video);
     REGISTER_MUXER   (MPEG2DVD,         mpeg2dvd);
     REGISTER_MUXER   (MPEG2SVCD,        mpeg2svcd);
     REGISTER_MUXER   (MPEG2VIDEO,       mpeg2video);
     REGISTER_MUXER   (MPEG2VOB,         mpeg2vob);
+#endif
     REGISTER_DEMUXER (MPEGPS,           mpegps);
     REGISTER_MUXDEMUX(MPEGTS,           mpegts);
     REGISTER_DEMUXER (MPEGTSRAW,        mpegtsraw);

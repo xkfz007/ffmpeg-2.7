@@ -29,6 +29,7 @@
  * frames in the VA-API video surfaces.
  */
 
+#ifdef _QSVDEC
 #include "config.h"
 
 #include <stdio.h>
@@ -482,3 +483,4 @@ finish:
 
     return ret;
 }
+#endif

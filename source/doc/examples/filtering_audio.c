@@ -27,7 +27,7 @@
  * API example for audio decoding and filtering
  * @example filtering_audio.c
  */
-
+#ifdef _AILTERING_AUDIO
 #include <unistd.h>
 
 #include <libavcodec/avcodec.h>
@@ -294,3 +294,4 @@ end:
 
     exit(0);
 }
+#endif

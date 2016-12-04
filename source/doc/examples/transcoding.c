@@ -27,7 +27,8 @@
  * API example for demuxing, decoding, filtering, encoding and muxing
  * @example transcoding.c
  */
-
+#define _TRANSCODING
+#ifdef _TRANSCODING
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavfilter/avfiltergraph.h>
@@ -45,7 +46,9 @@ typedef struct FilteringContext {
     AVFilterGraph *filter_graph;
 } FilteringContext;
 static FilteringContext *filter_ctx;
-
+//open input file 
+//find the stream info of inputfile
+//according to stream info to open video/audio/subtitle codec
 static int open_input_file(const char *filename)
 {
     int ret;
@@ -80,10 +83,12 @@ static int open_input_file(const char *filename)
         }
     }
 
-    av_dump_format(ifmt_ctx, 0, filename, 0);
+    av_dump_format(ifmt_ctx, 0, filename, 0);//print out the stream information
     return 0;
 }
 
+//open output file 
+//and open encoder
 static int open_output_file(const char *filename)
 {
     AVStream *out_stream;
@@ -94,7 +99,7 @@ static int open_output_file(const char *filename)
     unsigned int i;
 
     ofmt_ctx = NULL;
-    avformat_alloc_output_context2(&ofmt_ctx, NULL, NULL, filename);
+    avformat_alloc_output_context2(&ofmt_ctx, NULL, NULL, filename);//open Context for output file, init it according to extension
     if (!ofmt_ctx) {
         av_log(NULL, AV_LOG_ERROR, "Could not create output context\n");
         return AVERROR_UNKNOWN;
@@ -581,3 +586,5 @@ end:
 
     return ret ? 1 : 0;
 }
+
+#endif

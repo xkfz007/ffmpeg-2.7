@@ -38,6 +38,7 @@
  *              they have passed through the filter chain.
  */
 
+#ifdef _FILTER_AUDIO
 #include <inttypes.h>
 #include <math.h>
 #include <stdio.h>
@@ -363,3 +364,4 @@ fail:
     fprintf(stderr, "%s\n", errstr);
     return 1;
 }
+#endif

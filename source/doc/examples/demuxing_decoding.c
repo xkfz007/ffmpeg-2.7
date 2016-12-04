@@ -28,7 +28,7 @@
  * decode audio and video data.
  * @example demuxing_decoding.c
  */
-
+#ifdef _DEMUXING_DECODING
 #include <libavutil/imgutils.h>
 #include <libavutil/samplefmt.h>
 #include <libavutil/timestamp.h>
@@ -403,3 +403,5 @@ end:
 
     return ret < 0;
 }
+
+#endif
